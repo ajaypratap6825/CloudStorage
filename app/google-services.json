@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1006456454509",
+    "firebase_url": "https://cloud-overdrive-2.firebaseio.com",
+    "project_id": "cloud-overdrive-2",
+    "storage_bucket": "cloud-overdrive-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006456454509:android:bd5630accad1caba536e64",
+        "android_client_info": {
+          "package_name": "com.example.projects.cloudoverdrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006456454509-qmaqm52p0kn0hku92titkje3q4hi05em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALGQP4MPO_uOrgAuw_acTE8ARht8Yu7VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006456454509-qmaqm52p0kn0hku92titkje3q4hi05em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

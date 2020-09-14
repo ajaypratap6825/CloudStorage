@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:layout_marginTop="125dp"
+        android:layout_marginRight="280dp"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        android:backgroundTint="@android:color/background_light"
+        android:src="@drawable/file"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:layout_marginTop="125dp"
+        android:layout_marginRight="215dp"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        android:backgroundTint="@android:color/background_light"
+        android:src="@drawable/music"
+        android:visibility="invisible"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:layout_marginTop="125dp"
+        android:layout_marginRight="150dp"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        android:backgroundTint="@android:color/background_light"
+        android:src="@drawable/video"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:layout_marginTop="125dp"
+        android:layout_marginRight="85dp"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        android:backgroundTint="@android:color/background_light"
+        android:src="@drawable/photo"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@android:color/background_light"
+        android:src="@drawable/add"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
