@@ -222,11 +222,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 startActivity(ib);
                 finish();
                 break;
-            case R.id.nav_notifications:
-                Intent i = new Intent(DashboardActivity.this, NotificationActivity.class);
-                startActivity(i);
-                finish();
-                break;
             case R.id.nav_exit:
                 Intent ie = new Intent(Intent.ACTION_MAIN);
                 ie.addCategory(Intent.CATEGORY_HOME);

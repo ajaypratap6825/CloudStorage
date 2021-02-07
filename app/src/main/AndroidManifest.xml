@@ -17,7 +17,6 @@
         <activity android:name=".FileActivity"></activity>
         <activity android:name=".ImageActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".NotificationActivity" />
         <activity android:name=".UpdateActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".ForgetPasswordActivity" />

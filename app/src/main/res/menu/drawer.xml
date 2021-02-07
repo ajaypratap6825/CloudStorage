@@ -21,10 +21,6 @@
             android:id="@+id/nav_images"
             android:icon="@drawable/photo"
             android:title="Photos" />
-        <item
-            android:id="@+id/nav_notifications"
-            android:icon="@drawable/notification"
-            android:title="Notifications" />
 
         <item
             android:id="@+id/nav_settings"

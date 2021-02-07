@@ -60,7 +60,6 @@ public class ForgetPasswordActivity extends AppCompatActivity {
     public void onBackPressed(){
         Intent i = new Intent(ForgetPasswordActivity.this, LoginActivity.class);
         startActivity(i);
-
     }
 
 }

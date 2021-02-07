@@ -57,9 +57,23 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 String text_email = email.getEditText().getText().toString();
                 String text_password = password.getEditText().getText().toString();
+                if(text_email.isEmpty() && text_password.isEmpty()){
+                    email.setError("Field cannot be empty");
+                    password.setError("Field cannot be empty");
+                    return;
+                }
+                if(text_password.isEmpty()){
+                    email.setError(null);
+                    password.setError("Field cannot be empty");
+                    return;
+                }
+                if(text_email.isEmpty()){
+                    password.setError(null);
+                    email.setError("Field cannot be empty");
+                    return;
+                }
                 auth.signInWithEmailAndPassword(text_email, text_password).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -87,7 +101,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
 
             @Override
             public void onBackPressed() {

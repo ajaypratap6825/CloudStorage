@@ -56,8 +56,6 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final ProgressDialog pd = new ProgressDialog(SignupActivity.this);
-                pd.setMessage("Signing in");
-                pd.show();
                 if (!validationName() || !validationPassword() || !validationEmail() || !validationUsername()) {
                     return;
                 }
@@ -69,6 +67,8 @@ public class SignupActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            pd.setMessage("Signing in");
+                            pd.show();
                             Toast.makeText(SignupActivity.this, "Registration successful !!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(SignupActivity.this, DashboardActivity.class));
                             finish();
@@ -85,7 +85,6 @@ public class SignupActivity extends AppCompatActivity {
                         }
                     }
                 });
-
                 /*FirebaseFirestore db= FirebaseFirestore.getInstance();
                 Map<String,Object> data= new HashMap<>();
                 data.put("Name", valn);
